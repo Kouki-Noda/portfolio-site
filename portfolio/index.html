@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,  minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+    <!-- scriptタグをheadに入れるときはdeferを記入 -->
+    <script src="app.js"defer></script>
+    <title>KOUKI NODA'S PORT FOLIO</title>
+</head>
+
+<body>
+        
+
+    <!-- トップページのセクション -->
+    <section id="sec-top">
+        <h1 class="top-title">WELCOME to <br>
+            MY PORTFOLIO!</h1>
+        <div class="card1">
+            <div class="content">
+                <h2>01</h2>
+                <h3>PROFILE</h3>
+                <p>
+                    プロフィール
+                </p>
+                <a href="#sec-profile">GO</a>
+            </div>
+        </div>
+
+        <div class="card2">
+            <div class="content">
+                <h2>02</h2>
+                <h3>RECORD</h3>
+                <p>
+                    制作物
+                </p>
+                <a href="#sec-record">GO</a>
+            </div>
+        </div>
+
+        <div class="card3">
+            <div class="content">
+                <h2>03</h2>
+                <h3>SKILL</h3>
+                <p>
+                    使用できる言語
+                </p>
+                <a href="#sec-skill">GO</a>
+            </div>
+        </div>
+
+        <div class="card4">
+            <div class="content">
+                <h2>04</h2>
+                <h3>GITHUB</h3>
+                <p>
+                    マイページ
+                </p>
+                <a href="https://github.com/Kouki-Noda">GO</a>
+            </div>
+        </div>
+    </section>
+
+<!-- プロフィールのセクション -->
+    <section id="sec-profile">
+        <div class="container-profile">
+            <h4>PROFILE</h4>
+            <div class="content-profile">
+                <div class="image">
+                    <img src="/img/Kouki's photo.jpg" alt="" srcset="">
+                </div>
+                <div class="profile-text-box">
+                    <h5>野田 晃暉（26）</h5>
+                    
+                    はじめまして。 野田 晃暉と申します。<br>
+                    前職は福祉用具関係の営業を行っておりました。<br>
+                    昨年末、友人の勧めで自作PCを作成し、<br>
+                    はじめはゲームさえできればよかったのですが<br>
+                    ある日、ネットサーフィンのしている際に<br>
+                    スマートフォンで見ていたときとは違う<br>
+                    WEBサイトの見え方・迫力に興味を惹かれ、<br>
+                    フロントエンドエンジニアという職業に興味を持ち、<br>
+                    独学で勉強中です。
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- 制作物のセクション -->
+    <section id="sec-record">
+
+        <div class="container-record">
+            
+            <h4>RECORD</h4>
+            
+            <div class="content-record">
+                
+                <div class="record-text-box">
+                    
+                    <div class="yaku-list">
+                        <h1>
+                            麻雀役リスト（令和5年2月28日～令和5年3月1日）
+                        </h1>
+
+                        <a href="http://18.183.160.131/">
+                            <img src="/img/list-top.png">
+                        </a>
+                        <br>
+                        令和5年1月20日から独学で勉強を始めて、1番最初の制作物です。<br>
+                        HTMLとCSSの最序盤の基礎だけで出来ており、特に変わった挙動もしません。<br>
+                        HTMLとCSSのおさらいができました。
+                    </div>
+
+                    <div class="yaku-quiz">
+                        <h1 class="production">
+                        麻雀役覚えクイズ（令和5年3月1日～令和5年3月2日）
+                        </h1>
+                        
+                        <a href="http://3.113.48.92/index.html">
+                        <img src="img/quiz-top.png">
+                        </a>
+                        
+                        <br>
+                        麻雀役リストを作成し、自分が役をしっかり覚えられているか気になったため、<br>
+                        作成したクイズサイトです。HTMLとCSSとJava Scriptを使用しております。<br>
+                        
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- スキルのセクション -->
+    <section id="sec-skill">
+
+        <div class="container-skill">
+            <h4>SKILL</h4>
+
+            <div class="content-skill">
+
+                <div class="icon-html5">
+                    <img src="/img/html-5.svg"><br>
+                    HTML5:1month
+                </div>
+
+                <div class="icon-css3">
+                    <img src="/img/css-3.svg"><br>
+                    CSS3:1month
+                </div>
+
+                <div class="icon-js">
+                    <img src="/img/javascript.svg"><br>
+                    JS:0.5month
+                 </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- フッターのセクション -->
+    <section id="footer">
+    <footer class="button">
+        <a href="#sec-top">TOP</a>
+    </footer>
+    </section>
+    <script src="vanilla-tilt.js"></script>
+
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".card1"), {
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max-glare": 1,
+        });
+    </script>
+
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".card2"), {
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max-glare": 1,
+        });
+    </script>
+
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".card3"), {
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max-glare": 1,
+        });
+    </script>
+
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".card4"), {
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max-glare": 1,
+        });
+    </script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        // トップページのスクロール
+        ScrollReveal({ reset: true, distance:"60px", });
+        ScrollReveal().reveal('.top-title', { delay: 200, origin:"left" });
+        ScrollReveal().reveal('.card1', { delay: 400, origin:"bottom",});
+        ScrollReveal().reveal('.card2', { delay: 600, origin:"bottom",});
+        ScrollReveal().reveal('.card3', { delay: 800, origin:"bottom",});
+        ScrollReveal().reveal('.card4', { delay: 1000, origin:"bottom",});
+
+        // プロフィールのスクロール
+        ScrollReveal().reveal('.info-title', { delay: 200, origin:"top" });
+        ScrollReveal().reveal('.image', { delay: 400, origin:"left" });
+        ScrollReveal().reveal('.profile-text-box', { delay: 600, origin:"right" });
+
+        // 制作物のスクロール
+        ScrollReveal().reveal('.record-text-box', { delay: 600, origin:"bottom" });
+
+        // スキルのスクロール
+        ScrollReveal().reveal('.skill-text-box', { delay: 600, origin:"bottom" });
+       
+    </script>
+
+</body>
+
+</html>
